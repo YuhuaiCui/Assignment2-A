@@ -46,13 +46,13 @@ class Calculator {
         System.out.println("");
         System.out.println("SUM OF AN ARITHMETIC SERIES");
         System.out.println("The sum of the first " + n + " terms of an arithmetic series that starts with " + k0);
-        System.out.println(" and increases by " + i + " is " + sum());
+        System.out.println("and increases by " + i + " is " + sum());
         
         //geometric series
         System.out.println("");
         System.out.println("SUM OF A FINITE GEOMETRIC SERIES");
         System.out.println("The sum of the first " + k + " terms of a finite geometric series that starts with " + p); 
-        System.out.print(" and increases by a rate of " + r + " is " + o());
+        System.out.print("and increases by a rate of " + r + " is " + o());
     }
     
     double quad1() { //First answer to the quadratic equation
@@ -76,9 +76,10 @@ class Calculator {
     }
     
     double sum() { //Sum of the arithmetic series
-        return (n * ((k0 + k1) / 2));
+        return n * ((k0 + k1) / 2);
     }
     
     double o() { //Sum of the geometric series
         return (p * (1 - Math.pow(r,k))) / (1-r);
     }
+}
